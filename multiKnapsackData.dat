@@ -1,0 +1,27 @@
+set J :=
+a
+b
+;
+
+set I :=
+A B C D E F G H
+;
+
+table W(J) :
+J W :=
+a 10
+b 9
+;
+
+table v(I,J) w(I,J):
+I J v w :=
+B a 1 2
+D a 2 1
+F a 2 5
+H a 3 4
+B b 1 2
+D b 2 1
+F b 2 5
+H b 3 4
+;
+
