@@ -21,7 +21,7 @@ data.load(filename="knapsackData.dat")
 
 # OBJECTIVE
 def obj_rule(model):
-    return summation(model.v, model.x)
+    return sum(model.v[i] * model.x[i] for i in model.I)
 model.obj = Objective(rule=obj_rule, sense=maximize)
 
 # CONSTRAINTS
